@@ -10,7 +10,13 @@
 #' By default, the Euclidean Distance between optimally aligned \eqn{m}-dimensional functions is computed.
 #' Other options and parameters that can be passed to \code{\link[dtw:dtw]{dtw::dtw}} (such as the use of the Manhattan distance) can be defined in the additional parameters \code{...}
 #' @return Returns a square and symmetric \eqn{n x n} matrix of \eqn{m}-dimensional Dynamic Time Warp distances.
-#' @seealso See \code{\link[parallel:makeCluster]} \code{\link[parallel:makeCluster]{makeCluster}}, \code{\link[parallel:clusterExport]{clusterExport}}, \code{\link[parallel:stopCluster]{stopCluster}}, \code{\link[parallel:parApply]{parApply}} and \code{\link[parallel:parLapply]{parLapply}} from  \href{https://www.rdocumentation.org/packages/parallel}{parallel}, \code{\link[proxy:dist]{dist}} from \href{https://cran.r-project.org/web/packages/proxy/index.html}{proxy}
+#' @seealso
+#' \code{\link[parallel]{makeCluster}},
+#' \code{\link[parallel]{clusterExport}},
+#' \code{\link[parallel]{stopCluster}},
+#' \code{\link[parallel]{parApply}},
+#' \code{\link[parallel]{parLapply}},
+#' \code{\link[proxy]{dist}}
 #' @inherit dtw::dtw return
 #' @examples
 #' ## 2-dimensional functions

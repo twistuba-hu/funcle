@@ -42,5 +42,10 @@ mdtw(data, parallel = FALSE, cl = NULL)
 
 }
 \seealso{
-See \code{\link[parallel:makeCluster]} \code{\link[parallel:makeCluster]{makeCluster}}, \code{\link[parallel:clusterExport]{clusterExport}}, \code{\link[parallel:stopCluster]{stopCluster}}, \code{\link[parallel:parApply]{parApply}} and \code{\link[parallel:parLapply]{parLapply}} from  \href{https://www.rdocumentation.org/packages/parallel}{parallel}, \code{\link[proxy:dist]{dist}} from \href{https://cran.r-project.org/web/packages/proxy/index.html}{proxy}
+\code{\link[parallel]{makeCluster}},
+\code{\link[parallel]{clusterExport}},
+\code{\link[parallel]{stopCluster}},
+\code{\link[parallel]{parApply}},
+\code{\link[parallel]{parLapply}},
+\code{\link[proxy]{dist}}
 }
