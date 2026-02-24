@@ -7,7 +7,7 @@
 makeRLearner.classif.mclassiKnn <- function() {
   makeRLearnerClassif(
     cl = "classif.mclassiKnn",
-    package = "CMFold",
+    package = "funcle",
     par.set = makeParamSet(
       makeIntegerLearnerParam(id = "knn", default = 1L, lower = 1L, upper = 99L),
       makeDiscreteLearnerParam(id = "metric", default = "Euclidean", value = list("Euclidean", "L2", "Manhattan", "City-Block", "L1", "taxi", "Minkowski", "Lp", "supremum1", "supremum2", "infimum1", "infimum2", "mean", "minimum", "globMax", "globMin", "shortEuclidean", "Frechet", "Hausdorff", "dtw")), # ,NULL=NULL)),

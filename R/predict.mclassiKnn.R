@@ -67,7 +67,7 @@ predict.mclassiKnn <- function(object, newdata = NULL, msubset = NULL, predict.t
   }
 
   if (is.null(object$mdist)) {
-    mdist <- do.call(CMFold::compmDistMat, list(
+    mdist <- do.call(funcle::compmDistMat, list(
       x = object$fdata,
       y = newdata,
       method = object$metric,
