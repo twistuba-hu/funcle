@@ -1,7 +1,7 @@
 Package: funcle
 Title: Classification Ensembles for Functional Data
 Version: 0.0.0.9000
-Imports: mlr, fda.usc, dtw, Rfast
+Imports: mlr, fda.usc, dtw, Rfast, randomForest
 Authors@R: 
     c(person("Amanda", "Fernandez Fontelo", email = "amanda.fernandez@uab.cat", role = c("aut")),
     person("Sonja", "Greven", email = "sonja.greven@hu-berlin.de", role = c("aut")),

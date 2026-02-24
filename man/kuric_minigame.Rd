@@ -7,11 +7,12 @@
 \format{
 A data frame with 480 rows and 305 variables:
 \describe{
-\item{mt_id}{Identifier of the trajectory}
-\item{sex}{Gender of user}
+\item{mt_id}{Identifier of the trajectory as integer}
+\item{dim}{Dimensionality of the trajectory}
 \item{timestamps1-timestamps101}{Sampled timepoints}
 \item{xpos1-xpos101}{x-position of the cursor at a given timestamp}
 \item{ypos1-ypos101}{y-position of the cursor at a given timestamp}
+\item{sex}{Gender of user as factor}
 }
 }
 \source{

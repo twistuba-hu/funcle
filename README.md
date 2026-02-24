@@ -11,8 +11,8 @@ With funcle you can create powerful kernel-based classification ensembles using 
 You can install the development version of funcle from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("twistuba-hu/funcle")
+# install.packages("devtools")
+devtools::install_github("twistuba-hu/funcle")
 ```
 
 ## Example
