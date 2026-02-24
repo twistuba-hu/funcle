@@ -4,6 +4,7 @@
 #' @importFrom mlr trainLearner
 #' @importFrom mlr makeClassifTask
 #' @importFrom mlr tuneParams
+#' @importFrom fda.usc Kernel
 
 
 mclassiStackLearner <- function(
