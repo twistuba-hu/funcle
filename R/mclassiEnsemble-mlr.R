@@ -5,6 +5,11 @@
 #' @importFrom mlr makeClassifTask
 #' @importFrom mlr tuneParams
 #' @importFrom fda.usc Ker.norm
+#' @importFrom fda.usc Ker.cos
+#' @importFrom fda.usc Ker.epa
+#' @importFrom fda.usc Ker.tri
+#' @importFrom fda.usc Ker.quar
+#' @importFrom fda.usc Ker.unif
 
 
 mclassiStackLearner <- function(
