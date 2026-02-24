@@ -5,7 +5,7 @@ Imports: mlr, fda.usc, dtw, Rfast
 Authors@R: 
     c(person("Amanda", "Fernandez Fontelo", "amanda.fernandez@uab.cat", role = c("aut")),
     person("Sonja", "Greven", "sonja.greven@hu-berlin.de", role = c("aut")),
-    person("Ryan", "Gumsheimer", "gumsheimer@hu-berlin.de", role = c("aut"))
+    person("Ryan", "Gumsheimer", "gumsheimer@hu-berlin.de", role = c("aut")),
     person("Tobias", "Wistuba", "tobias.wistuba@hu-berlin.de", role = c("cre", "ctb")))
 Author: Amanda Fernandez-Fontelo [aut, cre],
   Tobias Wistuba [cre]
