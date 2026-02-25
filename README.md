@@ -17,17 +17,20 @@ devtools::install_github("twistuba-hu/funcle")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to build an ensemble learner using kernel-based clustering
 
 ``` r
 library(funcle)
 library(mlr)
 
-dataApp4 <- kuric_minigame
+# Loading the Kuric Minigame trajectories and building a classifier on the variable 'sex'
+dat <- kuric_minigame
 cl <- "classif.mclassiKernel"
-task <- makeClassifTask(data = dataApp4, target = "sex")
+task <- makeClassifTask(data = dat, target = "sex")
+
+# Specifying the semi-metrics for kernel-based clustering and setting all other parameters
 id <- c("L1", "globMin", "L2")
-knn <- NULL # list(c(1:2), c(1:2), c(1:2))
+knn <- NULL
 kernel <- "Ker.norm"
 gridsearch.vals <- list(c(100, 500, 2000), c(2, 3, 4, 5, 6))
 super.learner <- "randomForest"
@@ -37,9 +40,11 @@ par.vals <- list(
   list(metric = "L2", h = 5, predict.type = "prob")
 )
 
+# Train test split and cv folds
 weight <- c(0.70, 0.30)
-
 cv <- 10
+
+# Running the nested CV for the specified ensemble model
 asupremum3 <- mclassiOnested(
   cl = cl,
   task = task,
